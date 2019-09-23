@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: rgba(31, 199, 192, 0.63); */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 3rem;
+}
+
+video {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    /* border: 4px solid rgba(31, 199, 192, 0.63); */
+
+}
