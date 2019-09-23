@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "Thomas MacLean <hello@thomasmaclean.be> (https://thomasmaclean.be)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@zxing/library": "^0.15.2"
+  }
 }
