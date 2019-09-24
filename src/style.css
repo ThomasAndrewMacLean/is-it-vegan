@@ -9,6 +9,10 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.vegan {
+    background: greenyellow;
+}
+
 h1 {
     text-align: center;
     margin: 3rem;

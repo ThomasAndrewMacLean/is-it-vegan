@@ -6,6 +6,7 @@ const foundIt = result => {
 
         console.log(result);
         barCode = result.text;
+        document.getElementById('result').textContent = barCode;
 
         fetch('https://world.openfoodfacts.org/api/v0/product/' + result.text + '.json')
             .then(x => x.json())
@@ -14,6 +15,13 @@ const foundIt = result => {
                 const veg = data.product.ingredients_analysis_tags.includes('en:vegan');
                 console.log(veg);
                 document.getElementById('result').textContent = data.product.product_name + '   ' + veg;
+
+                if (veg) {
+                    document.querySelector('body').classList.add('vegan');
+                    setTimeout(() => {
+                        document.querySelector('body').classList.remove('vegan');
+                    }, 3000);
+                }
             });
     }
 };
